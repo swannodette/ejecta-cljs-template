@@ -22,5 +22,5 @@
       ;; Objective-C
       ["resources/objc/index.js" (render "index.js" data)]
       ["resources/objc/Podfile" (render "Podfile" data)]
-      ["resources/objc/AppDelegate.h" (render "EjectaCLJS/AppDelegate.h")]
-      ["resources/objc/AppDelegate.m" (render "EjectaCLJS/AppDelegate.m")])))
+      ["resources/objc/AppDelegate.h" (render "AppDelegate.h")]
+      ["resources/objc/AppDelegate.m" (render "AppDelegate.m")])))
