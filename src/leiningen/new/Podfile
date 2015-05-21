@@ -1,0 +1,3 @@
+platform :ios, '8.0'
+pod 'Ambly', :git => 'https://github.com/mfikes/ambly', :branch => 'jsc-c-api'
+pod 'Ejecta', :git => 'https://github.com/mfikes/Ejecta', :branch => 'podspec'
