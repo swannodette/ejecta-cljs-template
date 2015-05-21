@@ -1,0 +1,7 @@
+mkdir -p ObjC/{{sanitized}}/App
+cp resources/objc/index.js ObjC/{{sanitized}}/App/index.js
+cp resources/objc/Podfile ObjC/{{sanitized}}/Podfile
+cp resources/objc/AppDelegate.h ObjC/{{sanitized}}/AppDelegate.h
+cp resources/objc/AppDelegate.m ObjC/{{sanitized}}/AppDelegate.m
+cd ObjC/{{sanitized}}
+pod install
