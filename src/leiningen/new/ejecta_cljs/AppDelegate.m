@@ -48,7 +48,7 @@
     if (!successful) {
         NSLog(@"Failed to start REPL server.");
     } else {
-        NSLog(@"Started RELP server.");
+        NSLog(@"Started REPL server.");
     }
     
     return YES;
