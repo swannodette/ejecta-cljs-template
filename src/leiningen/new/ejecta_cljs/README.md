@@ -14,7 +14,7 @@ script/init
 Open your project:
 
 ```
-open Object/ProjectName/ProjectName.xcworkspace
+open ObjC/ProjectName/ProjectName.xcworkspace
 ```
 
 Use the *File > Add Files ...* menu option to add the newly created
