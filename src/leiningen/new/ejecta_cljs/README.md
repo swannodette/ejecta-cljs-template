@@ -27,3 +27,12 @@ Start the REPL:
 ```shell
 script/repl
 ```
+
+At the REPL try the following series of interactions:
+
+```shell
+(def canvas (.getElementById js/document "canvas"))
+(def ctx (.getContext canvas "2d"))
+(set! (.-fillStyle ctx) "#ff0000")
+(.fillRect ctx 50 50 100 100)
+```
