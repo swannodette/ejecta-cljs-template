@@ -13,6 +13,7 @@
       [".gitignore" (render "gitignore" data)]
 
       ["script/repl.clj" (render "repl.clj" data)]
+      ["script/repl" (render "repl" data) :executable true]
       ["script/init" (render "init" data) :executable true]
       
       ;; Objective-C
