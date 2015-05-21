@@ -1,10 +1,14 @@
 (ns leiningen.new.ejecta-cljs
-  (:require [leiningen.new.templates :refer [renderer name-to-path ->files]]))
+  (:require [clojure.string :as string]
+            [leiningen.new.templates :refer [renderer name-to-path ->files]]))
 
 (def render (renderer "ejecta-cljs"))
 
+(defn camelize [s]
+  (apply str (map #(apply str (.toUpperCase (str (first %))) (rest %)) (string/split s #"-"))))
+
 (defn ejecta-cljs [name]
-  (let [data {:name name :sanitized (name-to-path name)}]
+  (let [data {:name name :sanitized (name-to-path name) :camelized (camelize name)}]
     (->files data
       ;; Clojure
       ["project.clj" (render "project.clj" data)]

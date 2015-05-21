@@ -1,0 +1,1 @@
+rlwrap leiningen trampoline run -m clojure.main script/repl.clj
