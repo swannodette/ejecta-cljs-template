@@ -1,7 +1,7 @@
+cp resources/objc/Podfile ObjC/{{camelized}}/Podfile
 pod install
 mkdir -p ObjC/{{camelized}}/App
 cp resources/objc/index.js ObjC/{{camelized}}/App/index.js
-cp resources/objc/Podfile ObjC/{{camelized}}/Podfile
 cp resources/objc/AppDelegate.h ObjC/{{camelized}}/AppDelegate.h
 cp resources/objc/AppDelegate.m ObjC/{{camelized}}/AppDelegate.m
 cd ObjC/{{camelized}}
