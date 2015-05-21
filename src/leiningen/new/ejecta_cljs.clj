@@ -12,7 +12,6 @@
     (->files data
       ;; Clojure
       ["project.clj" (render "project.clj" data)]
-      ["Clojure/{{sanitized}}/index.cljs" (render "core.cljs" data)]
       ["README.md" (render "README.md" data)]
       [".gitignore" (render "gitignore" data)]
 
@@ -24,4 +23,4 @@
       ["resources/objc/index.js" (render "index.js" data)]
       ["resources/objc/Podfile" (render "Podfile" data)]
       ["resources/objc/AppDelegate.h" (render "EjectaCLJS/AppDelegate.h")]
-      ["resources/objc/AppDelegate.m" (render "EjectaCLJS/AppDelegate.m")]))))
+      ["resources/objc/AppDelegate.m" (render "EjectaCLJS/AppDelegate.m")])))

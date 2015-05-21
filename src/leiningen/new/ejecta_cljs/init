@@ -5,3 +5,5 @@ cp resources/objc/AppDelegate.h ObjC/{{camelized}}/AppDelegate.h
 cp resources/objc/AppDelegate.m ObjC/{{camelized}}/AppDelegate.m
 cd ObjC/{{camelized}}
 pod install
+cd ../..
+lein cljsbuild once index
