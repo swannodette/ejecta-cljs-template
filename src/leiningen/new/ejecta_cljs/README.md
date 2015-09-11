@@ -36,3 +36,9 @@ At the REPL try the following series of interactions:
 (set! (.-fillStyle ctx) "#ff0000")
 (.fillRect ctx 50 50 100 100)
 ```
+
+Troubleshooting
+==============
+If you run `script/init` and you get
+`script/init: line 3: pod: command not found`, you need to
+install CocoaPods: `brew install Caskroom/cask/cocoapods`.
